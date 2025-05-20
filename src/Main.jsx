@@ -7,11 +7,11 @@ const Main = ({data}) => {
 
         {data.map((item, index) => (
           <section key={index}   class="bg-neutral-0 rounded-[20px] p-[20px] box-border h-[200px] flex flex-col justify-between">
-            <div class="flex flex-row gap-[16px]">
-            <img src={item.logo}></img>
-            <div class="flex flex-col">
-            <p>{item.name}</p>
-            <p>{item.description}</p>
+            <div class="flex flex-row gap-[16px] max-h-[76px]">
+            <img src={item.logo} className="max-h-[60px] max-w-[60px]"></img>
+            <div class="flex flex-col gap-[10px]">
+            <p className='font-notoSans text-[20px] leading-[120%] tracking-[-0.2px] font-bold'>{item.name}</p>
+            <p className='font-notoSans leading-[140%] tracking-[-0.5px]'>{item.description}</p>
             </div>
             </div>
             <div class="flex flex-row flex justify-between">

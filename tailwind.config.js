@@ -6,6 +6,10 @@ module.exports = {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        notoSansItalic: ['notoSansItalic', 'sans-serif'],
+        notoSans: ['notoSans', 'sans-serif'],
+      },
       boxShadow: {
         'custom-soft': '0px 2px 3px #D9E5F4',
       },

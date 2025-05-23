@@ -42,7 +42,9 @@ const Main = ({ data, setData }) => {
             </div>
           </div>
           <div className="flex flex-row justify-between">
-            <button className='border border-neutral-300 px-[16px] py-[8px] rounded-full font-notoSans leading-[140%] tracking-[-0.5px] text-neutral-900 font-[500]'  onClick={() => removeCard(index)}>Remove</button>
+            <button className='border border-neutral-300 px-[16px] py-[8px] rounded-full font-notoSans leading-[140%] tracking-[-0.5px] text-neutral-900 font-[500] hover:bg-red-700 hover:text-neutral-0 active:bg-red-700 active:text-neutral-0 active:border-none   focus:outline-none       
+    focus:border-red-700       
+    focus:border-2   '  onClick={() => removeCard(index)}>Remove</button>
             <label className="inline-flex items-center cursor-pointer" onChange={() => toggleActive(index)} >
               <input
                 type="checkbox"

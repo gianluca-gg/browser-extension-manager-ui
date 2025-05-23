@@ -42,7 +42,7 @@ const Main = ({ data, setData }) => {
             </div>
           </div>
           <div className="flex flex-row justify-between">
-            <button className='border border-neutral-300 px-[16px] py-[8px] rounded-full font-notoSans leading-[140%] tracking-[-0.5px] text-neutral-900 font-[500] hover:bg-red-700 hover:text-neutral-0 active:bg-red-700 active:text-neutral-0 active:border-none   focus:outline-none       
+            <button aria-label={`Remove ${item.name}`} className='border border-neutral-300 px-[16px] py-[8px] rounded-full font-notoSans leading-[140%] tracking-[-0.5px] text-neutral-900 font-[500] hover:bg-red-700 hover:text-neutral-0 active:bg-red-700 active:text-neutral-0 active:border-none   focus:outline-none       
     focus:border-red-700       
     focus:border-2   dark:text-neutral-0 dark:border-neutral-600 dark:hover:border-none dark:hover:text-neutral-900 dark:hover:bg-red-500 '   onClick={() => removeCard(index)}>Remove</button>
             <label className="inline-flex items-center cursor-pointer" onChange={() => toggleActive(index)} >

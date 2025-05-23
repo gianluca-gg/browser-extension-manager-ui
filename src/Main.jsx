@@ -27,7 +27,13 @@ const Main = ({ data, setData }) => {
   return (
     <main className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[1170px]">
       {data.map((item, index) => (
-        <section key={index} className="bg-neutral-0 rounded-[20px] p-[20px] box-border h-[260px] lg:h-[200px] flex flex-col justify-between max-w-[1170px] mx-auto shadow-custom-light w-[100%] transition-opacity duration-200 ${item.isRemoving ? 'opacity-0' : 'opacity-100'}`">
+     <section
+     key={index}
+     className={`bg-neutral-0 rounded-[20px] p-[20px] box-border h-[260px] lg:h-[200px]
+                 flex flex-col justify-between shadow-custom-light w-full
+                 transition-opacity duration-200
+                 ${item.isRemoving ? 'opacity-0' : 'opacity-100'}`}
+   >
           <div className="flex flex-row gap-[16px] max-h-[76px]">
             <img src={item.logo} className="max-h-[60px] max-w-[60px]" alt={item.name} />
             <div className="flex flex-col gap-[10px]">

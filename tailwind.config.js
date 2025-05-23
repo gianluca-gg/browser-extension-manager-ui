@@ -12,6 +12,8 @@ module.exports = {
       },
       boxShadow: {
         'custom-soft': '0px 2px 3px #D9E5F4',
+        'check': '0px 1px 3px 0px rgba(10, 13, 18, 0.15)',
+        'custom-light': '0 2px 2px 0 rgba(194, 206, 225, 0.2)'
       },
       backgroundImage: {
         'light-blue': 'linear-gradient(180deg, #EBF2FC 0%, #EEFBF9 100%)',
